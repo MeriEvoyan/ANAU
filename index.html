@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html  lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv=”refresh” content="5s" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ՀԱԱՀ Վանաձորի մասնաճյուղ</title>
+  <link rel="stylesheet" href="./first/style.css">
+  <link rel="icon" href="./img/ՀԱԱՀ logo.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <!-- <div class="loader"> -->
+      <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <image height="100%" width="100%" href="./img/moving-car-css-preloader.svg" />
+      </svg>
+    <!-- </div> -->
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="contact-info">
+          <a href="tel:+37410524541"><i class="fas fa-phone"></i> +374 322 2 51 76</a>
+          <a href="mailto:info@anau.am"><i class="fas fa-envelope"></i> agr-vm2020@mail.ru</a>
+        </div>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=100009471412307" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/anau.v.b/" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@ASAUTV" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="./img/ՀԱԱՀ logo.png" alt="ՀԱԱՀ լոգո" class="logo-img">
+            <div class="logo-text">
+              <span class="logo-title">ՀԱԱՀ</span>
+              <span class="logo-subtitle">Վանաձորի մասնաճյուղ </span>
+            </div>
+          </a>
+        </div>
+        <div class="header-right">
+          <div class="search-lang">
+            <div class="search-box">
+              <input type="text" placeholder="Որոնել...">
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div id="google_translate_element" style="display: none;"></div>
+            <div class="language-selector " >
+              <button class="lang-btn active" onclick="setLanguage('hy')">ՀԱՅ</button>
+              <button class="lang-btn" onclick="setLanguage('en')"><a href="./english/index.html"> ENG </a></button>
+              <button class="lang-btn"  onclick="setLanguage('ru')"> <a href="./ru/ru.html"> РУС</a></button>
+            </div>
+          </div>
+          <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="container">
+        <ul class="nav-list">
+          <li class="nav-item active"><a href="./index.html" class="nav-link">Գլխավոր</a></li>
+              <li class="nav-item"><a href="./about/about.html"  class="nav-link" >Մեր մասին</a></li>
+           <div class="menu" id="menu">
+            <div class="dropdown" id="dropdown"> 
+          <li class="nav-item"><a href="./education/education.html" class="nav-link" class="dropbtn" onclick="toggleDropdown(event)">Կրթություն</a></li>
+               <div class="dropdown-content">
+            <a target="_blank" href="./img/Համալս. ընդուն. հայտարար. 2024-2025 (1).pdf">Բակալավրիատ</a>
+            <a  target="_blank" href="./img/քոլեջի հայտարարություն 2025-26 .pdf">Միջին մասնագիտական</a>
+          </div>
+        </div>
+      </div>
+
+          <li class="nav-item"><a href="./applicant/applicant.html" class="nav-link">Դիմորդ</a></li>
+          <div class="menu" id="menu">
+            <div class="dropdown" id="dropdown"> 
+          <li class="nav-item"><a href="./haah/haah.html" class="nav-link" onclick="toggleDropdown(event)">ՀԱԱՀ</a></li>
+          <div class="dropdown-content">
+            <a href="../img/կառուցվածքը.pdf">Կառուցվածք</a>
+            <a href="../img/Կանոնադրություն Վանաձոր, 2024  .pdf">Կանոնակարգ</a>
+            <!-- <a href="./about/about.html #diector">Տնօրեն</a> -->
+            <a href="./about/about.html #partners">Գործընկերներ</a>
+            <a href="https://anau.am/?s=%D5%A3%D5%AB%D5%BF%D5%A1%D5%B4%D5%A5%D5%A9%D5%B8%D5%A4%D5%A1%D5%AF%D5%A1%D5%B6">Գիտամեթոդական խորհուրդ</a>
+            <a href="./student/index.html">ՈՒս․ խորհուրդ</a>
+            <a target="_blank" href="https://library.anau.am/">Գրադարան</a>
+            <a  target="_blank" href="https://anau.am/subdivisions/center-of-quality-assessment-and-assurance/">Որակի ապահովման բաժին</a>
+          </div>
+        </div>
+      </div>
+      <li class="nav-item"><a href="./cariere/cariere.html" class="nav-link">Կարիերայի կենտրոն</a></li>
+      <li class="nav-item"><a href="./student/index.html" class="nav-link">Ուս․ խորհուրդ</a></li>
+          <li class="nav-item"><a href="./contact/contact.html" class="nav-link">Հետադարձ կապ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="close-menu">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="mobile-search">
+      <input type="text" placeholder="Որոնել...">
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+    <ul class="mobile-nav">
+      <li class="mobile-nav-item active"><a href="./index.html" class="mobile-nav-link">Գլխավոր</a></li>
+      <li class="mobile-nav-item"><a href="./about/about.html" class="mobile-nav-link">Մեր մասին</a></li>
+      <li class="mobile-nav-item"><a href="./education/education.html" class="mobile-nav-link">Կրթություն</a></li>
+      <li class="mobile-nav-item"><a href="./contact/contact.html" class="mobile-nav-link">Դիմորդ</a></li>
+      <li class="mobile-nav-item"><a href="./haah/haah.html" class="mobile-nav-link">ՀԱԱՀ</a></li>
+      <li class="nav-item"><a href="./cariere/cariere.html" class="nav-link">Կարիերայի կենտրոն</a></li>
+      <li class="nav-item"><a href="./student/index.html" class="nav-link">Ուս․ խորհուրդ</a></li>
+      <li class="mobile-nav-item"><a href="./contact/contact.html" class="mobile-nav-link">Հետադարձ կապ</a></li>
+    </ul>
+    <div class="mobile-lang">
+      <button class="mobile-lang-btn active">ՀԱՅ</button>
+      <a class="mobile-lang-btn" href="./english/index.html"> ENG</a>
+      <button class="mobile-lang-btn">РУС</button>
+    </div>
+    <div class="mobile-contact">
+      <a href="tel:+37410524541"><i class="fas fa-phone"></i> +374 10 52 45 41</a>
+      <a href="mailto:info@anau.am"><i class="fas fa-envelope"></i>agr-vm2020@mail.ru</a>
+    </div>
+    <div class="mobile-social">
+      <a href="#" class="mobile-social-link"><i class="fab fa-facebook-f"></i></a>
+      <!-- <a href="#" class="mobile-social-link"><i class="fab fa-twitter"></i></a> -->
+      <a href="#" class="mobile-social-link"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@ASAUTV" class="mobile-social-link"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-slider">
+      <div class="hero-slide active">
+        <div class="hero-image" style="background-image: url('./img/beckgraundi\ nkar.JPG')"></div>
+        <div class="hero-content">
+          <h1 class="hero-title">Հայաստանի ազգային ագրարային համալսարանի Վանաձորի մասնաճյուղ</h1>
+          <p class="hero-subtitle">Ագրարային կրթության և գիտության առաջատար</p>
+          <a href="./about/about.html" class="hero-btn">Իմանալ ավելին</a>
+        </div>
+      </div>
+      <div class="hero-slide">
+        <div class="hero-image" style="background-image: url(./img/newlab.JPG)"></div>
+        <div class="hero-content">
+          <h1 class="hero-title">Ուսումնական գերազանցություն</h1>
+          <p class="hero-subtitle">Ժամանակակից կրթություն և նորարարական հետազոտություններ</p>
+          <!-- <a href="#" class="hero-btn">Կրթական ծրագրեր</a> -->
+        </div>
+      </div>
+      <div class="hero-slide">
+        <div class="hero-image" style="background-image: url('./img/lab2.JPG')"></div>
+        <div class="hero-content">
+          <h1 class="hero-title">Դարձիր մեր ուսանողը</h1>
+          <p class="hero-subtitle">Ընդունելության գործընթաց 2023-2024 ուսումնական տարվա համար</p>
+          <a href="./applicant/applicant.html" class="hero-btn">Դիմել հիմա</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-controls">
+    <button class="hero-prev"><i class="fas fa-chevron-left"></i></button>
+    <div class="hero-dots">
+      <span class="hero-dot active"></span>
+      <span class="hero-dot"></span>
+      <span class="hero-dot"></span>
+    </div>
+    <button class="hero-next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+  <div class="scroll-down">
+    <span>Շարունակել</span>
+    <i class="fas fa-chevron-down"></i>
+  </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 class="feature-title">Որակյալ կրթություն</h3>
+          <p class="feature-desc">Ժամանակակից կրթական ծրագրեր և միջազգային չափանիշներ</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-flask"></i>
+          </div>
+          <h3 class="feature-title">Գիտական հետազոտություններ</h3>
+          <p class="feature-desc">Նորարարական հետազոտություններ ագրարային ոլորտում</p>
+        </div>
+        <div class="feature-card">
+
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="feature-title">Փորձառու դասախոսներ</h3>
+          <p class="feature-desc">Բարձրակարգ մասնագետներ և գիտնականներ</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3 class="feature-title">Միջազգային կապեր</h3>
+          <p class="feature-desc">Համագործակցություն աշխարհի առաջատար համալսարանների հետ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Մեր մասին</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <div class="about-img-container">
+            <img src="./img/beckgraundi nkar.JPG" alt="ՀԱԱՀ շենք" class="about-img">
+            </div>
+        </div>
+        <div class="about-text">
+          <h3 class="about-subtitle">Հայաստանի ագրարային կրթության առաջատարը</h3>
+          <p class="about-desc">Հայաստանի ազգային ագրարային համալսարանը հիմնադրվել է 1930 թվականին և այսօր հանդիսանում է ագրարային ոլորտի առաջատար կրթական և գիտական կենտրոն Հայաստանում: Համալսարանը պատրաստում է բարձրակարգ մասնագետներ գյուղատնտեսության, անասնաբուժության, սննդի տեխնոլոգիաների և ագրոբիզնեսի ոլորտներում:</p>
+          <p class="about-desc">Մեր առաքելությունն է ապահովել բարձրորակ կրթություն, զարգացնել գիտական հետազոտությունները և նպաստել Հայաստանի ագրարային ոլորտի կայուն զարգացմանը:</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Ժամանակակից լաբորատորիաներ</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Փորձարարական տնտեսություններ</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Միջազգային փոխանակման ծրագրեր</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Ուսանողական ակտիվ կյանք</span>
+            </div>
+          </div>
+          <a href="./about/about.html" class="about-btn">Ավելին մեր մասին</a>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-element parallax-leaf-1"></div>
+    <div class="parallax-element parallax-leaf-2"></div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Կրթություն</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="education-tabs">
+        <button class="tab-btn active"  onclick="openeducation(event, 'bachelor')">Բակալավրիատ</button>
+        <button class="tab-btn"  onclick="openeducation(event, 'master')"> Միջին մասնագիտական</button>
+      </div>
+      <div class="education-content">
+        <div class="tab-content active" id="bachelor-content">
+          <div class="education-grid">
+            <div class="education-card">
+              <div class="education-card-icon">
+                <i class="fas fa-seedling"></i>
+              </div>
+              <h3 class="education-card-title">Ագրոնոմիա</h3>
+              <p class="education-card-desc">Ագրոնոմիա, սելեկցիա և գենետիկա</p>
+              <a href="./education/education.html" class="education-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="education-card">
+              <div class="education-card-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <h3 class="education-card-title">Անտառային տնտեսություն</h3>
+              <p class="education-card-desc">Անտառային տնտեսագիտություն և բնակավայրերի կանաչապատում</p>
+              <a href="./education/education.html" class="education-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="education-card">
+              <div class="education-card-icon">
+                <i class="fas fa-paw"></i>
+              </div>
+              <h3 class="education-card-title">Անասնաբուժություն</h3>
+              <p class="education-card-desc">Անասնաբուժական սանիտարական փորձաքննություն</p>
+              <a href="./education/education.html" class="education-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="education-card">
+              <div class="education-card-icon">
+                <i class="fas fa-tractor"></i>
+              </div>
+              <h3 class="education-card-title">Ագրարային Ճարտարագիտություն</h3>
+              <p class="education-card-desc">մեքենասարքավորումների  Ճարտարագիտություն</p>
+              <a href="./education/education.html" class="education-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="education-card">
+              <div class="education-card-icon">
+                <i class="fas fa-apple-alt"></i>
+              </div>
+              <h3 class="education-card-title">Պարենամթերքի տեխնոլոգիա</h3>
+              <p class="education-card-desc">Սննդամթերքի անվտանգություն, Պարենամթերքի տեխնոլոգիա</p>
+              <a href="./education/education.html" class="education-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="education-card">
+              <div class="education-card-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3 class="education-card-title">Ագրոէկոնոմիկա</h3>
+              <p class="education-card-desc">Ագրոպարենային համակարգի էկոնոմիկա</p>
+              <a href="./education/education.html" class="education-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="education-card">
+              <div class="education-card-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3 class="education-card-title">Ագրարային Ճարտարագիտություն</h3>
+              <p class="education-card-desc">Հողային և ջրային ռեսուրսների Ճարտարագիտություն</p>
+              <a href="./education/education.html" class="education-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a>
+            </div>
+            </div>
+            </div>
+            </div>
+           
+            <!-- master card -->
+
+        <div class="tab-content" id="master-content">
+          <div class="education-grid">
+          
+            <div class="education-card master">
+              <div class="education-card-icon">
+                <i class="fas fa-microscope"></i>
+              </div>
+              <h3 class="education-card-title">Պահածոների և սննդախտանյութերի տեխնոլոգիա</h3>
+              <p class="education-card-desc">հիմնական կրթ․ հիմքով/9-րդ դաս․</p>
+              <a href="./education/education.html" class="education-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="education-card master">
+              <div class="education-card-icon">
+                <i class="fas fa-water"></i>
+              </div>
+              <h3 class="education-card-title">Ջերմատնային տնտեսություն</h3>
+              <p class="education-card-desc">հիմնական կրթ․ հիմքով/9-րդ դաս․</p>
+              <p class="education-card-desc">միջնակարգ կրթ․ հիմքով/12-րդ դաս․</p>
+              <a href="./education/education.html" class="education-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="education-card">
+              <div class="education-card-icon">
+                <i class="fas fa-water"></i>
+              </div>
+              <h3 class="education-card-title">Կաթի և կաթնամթերքի արտադրության տեխնոլոգիա</h3>
+              <p class="education-card-desc">հիմնական կրթ․ հիմքով/9-րդ դաս․</p>
+              <p class="education-card-desc">միջնակարգ կրթ․ հիմքով/12-րդ դաս․</p>
+              <a href="./education/education.html" class="education-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="education-card">
+              <div class="education-card-icon">
+                <i class="fas fa-water"></i>
+              </div>
+              <h3 class="education-card-title">Փոխադրումների կազմակերպում և կառավարում տրանսպորտում</h3>
+              <p class="education-card-desc">հիմնական կրթ․ հիմքով/9-րդ դաս․</p>
+              <p class="education-card-desc">միջնակարգ կրթ․ հիմքով/12-րդ դաս․</p>
+              <a href="./education/education.html" class="education-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="education-card">
+              <div class="education-card-icon">
+                <i class="fas fa-water"></i>
+              </div>
+              <h3 class="education-card-title">Հաշվապահական հաշվառում</h3>
+              <p class="education-card-desc">հիմնական կրթ․ հիմքով/9-րդ դաս․</p>
+              <a href="./education/education.html" class="education-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="education-card">
+              <div class="education-card-icon">
+                <i class="fas fa-water"></i>
+              </div>
+              <h3 class="education-card-title">Գյուղատնտեսագիտություն</h3>
+              <p class="education-card-desc">հիմնական կրթ․ հիմքով/9-րդ դաս․</p>
+              <p class="education-card-desc">միջնակարգ կրթ․ հիմքով/12-րդ դաս․</p>
+              <a href="./education/education.html" class="education-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="education-card">
+              <div class="education-card-icon">
+                <i class="fas fa-water"></i>
+              </div>
+              <h3 class="education-card-title">Մենեջմենթ</h3>
+              <p class="education-card-desc">հիմնական կրթ․ հիմքով/9-րդ դաս․</p>
+              <a href="./education/education.html" class="education-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="education-card">
+              <div class="education-card-icon">
+                <i class="fas fa-water"></i>
+              </div>
+              <h3 class="education-card-title">Գյուղատնտեսական աշխատանքների տեխնիկական ապահովում</h3>
+              <p class="education-card-desc">հիմնական կրթ․ հիմքով/9-րդ դաս․</p>
+              <a href="./education/education.html" class="education-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="education-card">
+              <div class="education-card-icon">
+                <i class="fas fa-water"></i>
+              </div>
+              <h3 class="education-card-title">Փոխադրումների կազմակերպում և կառավարում տրանսպորտում/հեռակա ուսուցում/</h3>
+              <p class="education-card-desc">միջնակարգ կրթ․ հիմքով/12-րդ դաս․</p>
+              <a href="./education/education.html" class="education-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a>
+            </div>
+  </section>
+
+  <!-- Applicant Section -->
+  <section id="applicant" class="applicant-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Դիմորդ</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="applicant-content">
+        <div class="applicant-text">
+          <h3 class="applicant-subtitle">Դարձիր ՀԱԱՀ ուսանող</h3>
+          <p class="applicant-desc">Հայաստանի ազգային ագրարային համալսարանն առաջարկում է  միջին մասնագիտական և բակալավրի կրթական ծրագրեր, : Մեր համալսարանում դուք կստանաք որակյալ կրթություն, ձեռք կբերեք գործնական հմտություններ և կդառնաք պահանջված մասնագետ աշխատաշուկայում:</p>
+          <div class="applicant-steps">
+            <div class="applicant-step">
+              <div class="step-number">01</div>
+              <div class="step-content">
+                <h4 class="step-title">Ընտրիր մասնագիտություն</h4>
+                <p class="step-desc">Ծանոթացիր առաջարկվող մասնագիտություններին և ընտրիր քեզ համապատասխանը</p>
+              </div>
+            </div>
+            <div class="applicant-step">
+              <div class="step-number">02</div>
+              <div class="step-content">
+                <h4 class="step-title">Հավաքիր փաստաթղթերը</h4>
+                <p class="step-desc">Պատրաստիր անհրաժեշտ փաստաթղթերը </p>
+              </div>
+            </div>
+            <div class="applicant-step">
+              <div class="step-number">03</div>
+              <div class="step-content">
+                <h4 class="step-title">Ներկայացրու դիմումը</h4>
+                <p class="step-desc">Ներկայացրու դիմումը և փաստաթղթերը համալսարանի ընդունող հանձնաժողովին</p>
+              </div>
+            </div>
+            <div class="applicant-step">
+              <div class="step-number">04</div>
+              <div class="step-content">
+                <h4 class="step-title">Հանձնիր քննությունները</h4>
+                <p class="step-desc">Հաջողությամբ հանձնիր ընդունելության քննությունները</p>
+              </div>
+            </div>
+          </div>
+          <a href="./applicant/applicant.html" class="applicant-btn">Դիմել հիմա</a>
+        </div>
+        <div class="applicant-image">
+          <div class="applicant-img-container">
+            <div class="applicant-img-3d">
+              <div class="applicant-img-front" style="background-image: url('./img/Flux_Dev_A_diverse_group_of_Armenian_students_ranging_in_age_f_2.jpg')"></div>
+              <div class="applicant-img-back" style="background-image: url('./img/DSC_5682.JPG')"></div>
+            </div>
+          </div>
+          <div class="applicant-card">
+            <div class="applicant-card-header">
+              <h4>Ընդունելության ժամկետներ</h4>
+            </div>
+            <div class="applicant-card-body">
+              <div class="applicant-date">
+                <div class="date-icon"><i class="far fa-calendar-alt"></i></div>
+                <div class="date-content">
+                  <div class="date-title">Փաստաթղթերի ընդունում</div>
+                  <div class="date-value">Հուլիսի 15-Օգոստոսի 29 (միջին մասնգ․կրթ․ծր)</div>
+                  <div class="date-value">Օգոստոսի 20-Սեպտեմբերի 20 (բակալավրի կրթ․ ծր)</div>
+                </div>
+              </div>
+              <div class="applicant-date">
+                <div class="date-icon"><i class="far fa-calendar-check"></i></div>
+                <div class="date-content">
+                  <div class="date-title">Ընդունելության քննություններ</div>
+                  <div class="date-value">Սեպտեմբերի20 - Հոկտեմբերի 20(բակալավրի կրթ․ ծր)</div>
+                </div>
+              </div>
+              <div class="applicant-date">
+                <!-- <div class="date-icon"><i class="far fa-calendar-plus"></i></div> -->
+                <!-- <div class="date-content">
+                  <div class="date-title">Արդյունքների հրապարակում</div>
+                  <div class="date-value">Օգոստոս 10, 2023</div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-element parallax-wheat-1"></div>
+    <div class="parallax-element parallax-wheat-2"></div>
+  </section>
+
+  <!-- ANAU Section -->
+  <section id="anau" class="anau-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">ՀԱԱՀ</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="anau-tabs">
+        <button class="anau-tab-btn active" data-tab="faculties">Մասնագիտություններ</button>
+        <!-- <button class="anau-tab-btn" data-tab="research">Գիտական կենտրոններ</button> -->
+        <!-- <button class="anau-tab-btn" data-tab="international">Միջազգային կապեր</button> -->
+        <button class="anau-tab-btn" data-tab="library"><a href="https://library.anau.am/">Գրադարան</a> </button>
+      </div>
+      <div class="anau-content">
+        <div class="anau-tab-content active" id="faculties-content">
+          <div class="anau-grid">
+            <div class="anau-card">
+              <div class="anau-card-img" style="background-image: url('./img/img2lab.JPG')"></div>
+              <div class="anau-card-body">
+                <h3 class="anau-card-title">Ագրոնոմիական ֆակուլտետ</h3>
+                <p class="anau-card-desc">Բուսաբուծության, հողագիտության և բույսերի պաշտպանության ուսումնասիրություն</p>
+                <!-- <a href="#" class="anau-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a> -->
+              </div>
+            </div>
+            <div class="anau-card">
+              <div class="anau-card-img" style="background-image: url('./img/lab2.JPG')"></div>
+              <div class="anau-card-body">
+                <h3 class="anau-card-title">Անասնաբուժական ֆակուլտետ</h3>
+                <p class="anau-card-desc">Կենդանիների առողջության և անասնաբուժության ուսումնասիրություն</p>
+                <!-- <a href="#" class="anau-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a> -->
+              </div>
+            </div>
+            <div class="anau-card">
+              <div class="anau-card-img" style="background-image: url('./img/lab3.JPG')"></div>
+              <div class="anau-card-body">
+                <h3 class="anau-card-title">Պարենամթերքի տեխնոլոգիաների ֆակուլտետ</h3>
+                <p class="anau-card-desc">Սննդի արտադրության և վերամշակման տեխնոլոգիաներ</p>
+                <!-- <a href="#" class="anau-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a> -->
+              </div>
+            </div>
+            <div class="anau-card">
+              <div class="anau-card-img" style="background-image: url('./img/DSC_5339.JPG')"></div>
+              <div class="anau-card-body">
+                <h3 class="anau-card-title">Ագրոբիզնեսի և տնտեսագիտության ֆակուլտետ</h3>
+                <p class="anau-card-desc">Գյուղատնտեսական բիզնեսի կառավարում և տնտեսագիտություն</p>
+                <!-- <a href="#" class="anau-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="anau-tab-content" id="research-content">
+          <div class="anau-grid">
+            <div class="anau-card">
+              <div class="anau-card-img" style="background-image: url('/placeholder.svg?height=300&width=400')"></div>
+              <div class="anau-card-body">
+                <h3 class="anau-card-title">Ագրոկենսատեխնոլոգիայի գիտական կենտրոն</h3>
+                <p class="anau-card-desc">Բույսերի և կենդանիների կենսատեխնոլոգիաների հետազոտություններ</p>
+                <!-- <a href="#" class="anau-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a> -->
+              </div>
+            </div>
+            <div class="anau-card">
+              <div class="anau-card-img" style="background-image: url('/placeholder.svg?height=300&width=400')"></div>
+              <div class="anau-card-body">
+                <h3 class="anau-card-title">Հողագիտության և ագրոքիմիայի կենտրոն</h3>
+                <p class="anau-card-desc">Հողի որակի և պարարտանյութերի հետազոտություններ</p>
+                <!-- <a href="#" class="anau-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="anau-tab-content" id="international-content">
+          <div class="anau-grid">
+            <div class="anau-card">
+              <div class="anau-card-img" style="background-image: url('/placeholder.svg?height=300&width=400')"></div>
+              <div class="anau-card-body">
+                <h3 class="anau-card-title">Միջազգային համագործակցություն</h3>
+                <p class="anau-card-desc">Համագործակցություն աշխարհի տարբեր համալսարանների և կազմակերպությունների հետ</p>
+                <a href="#" class="anau-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a> -->
+              <!-- </div>
+            </div> -->
+            <!-- <div class="anau-card">
+              <div class="anau-card-img" style="background-image: url('/placeholder.svg?height=300&width=400')"></div>
+              <div class="anau-card-body">
+                <h3 class="anau-card-title">Փոխանակման ծրագրեր</h3>
+                <p class="anau-card-desc">Ուսանողների և դասախոսների փոխանակման ծրագրեր</p> -->
+                <!-- <a href="#" class="anau-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a> -->
+              <!-- </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="anau-tab-content" id="library-content">
+          <div class="anau-grid">
+            <div class="anau-card">
+              <div class="anau-card-img" style="background-image: url('/placeholder.svg?height=300&width=400')"></div>
+              <div class="anau-card-body">
+                <h3 class="anau-card-title">Համալսարանի գրադարան</h3>
+                <p class="anau-card-desc">Հարուստ գրականություն և էլեկտրոնային ռեսուրսներ</p>
+                <!-- <a href="#" class="anau-card-link">Մանրամասներ <i class="fas fa-arrow-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section class="news-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Նորություններ և իրադարձություններ</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="news-slider">
+        <div class="news-slider-container">
+          <div class="news-slide">
+            <div class="news-card">
+              <div class="news-img" style="background-image: url('./img/Flux_Dev_A_diverse_group_of_Armenian_students_ranging_in_age_f_2.jpg')"></div>
+              <div class="news-content">
+                <div class="news-date">
+                  <span class="news-day">15</span>
+                  <span class="news-month">Հուն</span>
+                </div>
+                <h3 class="news-title">Դիմորդ</h3>
+                <p class="news-desc">Միացի՛ր ապագայի գյուղատնտեսներին՝ ուսում առ գերժամանակակից մոտեցումներով և իրական փորձով։</p>
+                <a href="./applicant/applicant.html" class="news-link">Կարդալ ավելին <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="news-slide">
+            <div class="news-card">
+              <div class="news-img" style="background-image: url('./img/newlab.JPG')"></div>
+              <div class="news-content">
+                <div class="news-date">
+                  <span class="news-day">10</span>
+                  <span class="news-month">Հուն</span>
+                </div>
+                <h3 class="news-title">Նոր լաբորատորիայի բացում</h3>
+                <p class="news-desc">Համալսարանում բացվեց նոր ժամանակակից լաբորատորիա՝ հագեցած վերջին սերնդի սարքավորումներով</p>
+                <!-- <a href="#" class="news-link">Կարդալ ավելին <i class="fas fa-arrow-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="news-slide">
+            <div class="news-card">
+              <div class="news-img" style="background-image: url('img/usgarun2025.jpg')"></div>
+              <div class="news-content">
+                <div class="news-date">
+                  <span class="news-day">23</span>
+                  <span class="news-month">Մայ</span>
+                </div>
+                <h3 class="news-title">Ուսանողական մրցույթի արդյունքներ</h3>
+                <p class="news-desc">Ամփոփվեցին ուսանողական գիտական աշխատանքների մրցույթի արդյունքները</p>
+                <!-- <a href="#" class="news-link">Կարդալ ավելին <i class="fas fa-arrow-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <!-- <div class="news-slide">
+            <div class="news-card">
+              <div class="news-img" style="background-image: url('/placeholder.svg?height=300&width=400')"></div>
+              <div class="news-content">
+                <div class="news-date">
+                  <span class="news-day">01</span>
+                  <span class="news-month">Հուն</span>
+                </div>
+                <h3 class="news-title">Համագործակցության նոր պայմանագիր</h3>
+                <p class="news-desc">Համալսարանը համագործակցության պայմանագիր կնքեց եվրոպական առաջատար համալսարանի հետ</p>
+                <a href="#" class="news-link">Կարդալ ավելին <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="news-slider-controls">
+          <button class="news-prev"><i class="fas fa-chevron-left"></i></button>
+          <button class="news-next"><i class="fas fa-chevron-right"></i></button>
+        </div> -->
+      </div>
+      <div class="news-view-all">
+        <a href="#" class="news-view-all-btn">Տեսնել բոլոր նորությունները</a>
+      </div>
+    </div>
+  </section>
+
+ 
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Կապ մեզ հետ</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-card-header">
+              <h3>Կապվեք մեզ հետ</h3>
+            </div>
+            <div class="contact-card-body">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Հասցե</h4>
+                  <p>Ուսանողական 9/Աբովյան 64, Վանաձոր, Հայաստան</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Հեռախոս</h4>
+                  <p> +374 322 2 51 76</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Էլ. փոստ</h4>
+                  <p>agr-vm2020@mail.ru</p>
+                  <!-- <p>rector@anau.am</p> -->
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Աշխատանքային ժամեր</h4>
+                  <p>Երկուշաբթի - Ուրբաթ: 9:00 - 16:00</p>
+                  <p>Շաբաթ - Կիրակի: Փակ է</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-card-footer">
+              <div class="contact-social">
+                <a href="https://www.facebook.com/profile.php?id=100009471412307&locale=ru_RU" class="contact-social-link"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#" class="contact-social-link"><i class="fab fa-twitter"></i></a> -->
+                <a href="https://www.instagram.com/anau.v.b/" class="contact-social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="contact-social-link"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <form class="contact-form">
+            <h3 class="form-title">Ուղարկել հաղորդագրություն</h3>
+            <div class="form-group">
+              <input type="text" id="name" required>
+              <label for="name">Անուն Ազգանուն</label>
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" required>
+              <label for="email">Էլ. փոստ</label>
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" required>
+              <label for="subject">Թեմա</label>
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <textarea id="message" required></textarea>
+              <label for="message">Հաղորդագրություն</label>
+              <div class="form-line"></div>
+            </div>
+            <button type="submit" class="form-submit">Ուղարկել <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="map-container">
+      <div class="map-overlay"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4104973505!2d44.50800937643536!3d40.18539437147952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcf595178b3d%3A0xb956b1ffdcf4b07e!2sArmenian%20National%20Agrarian%20University!5e0!3m2!1sen!2s!4v1687523689896!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-widget">
+            <div class="footer-logo">
+              <img src="./img/ՀԱԱՀ logo.png" alt="ՀԱԱՀ լոգո"  class="footer-logo-img">
+              <div class="footer-logo-text">
+                <span class="footer-logo-title">ՀԱԱՀ</span>
+                <span class="footer-logo-subtitle">Վանաձորի մասնաճյուղ</span>
+              </div>
+            </div>
+            <p class="footer-desc">Հայաստանի ազգային ագրարային համալսարանը հիմնադրվել է 1930 թվականին և այսօր հանդիսանում է ագրարային ոլորտի առաջատար կրթական և գիտական կենտրոն Հայաստանում:</p>
+            <div class="footer-social">
+              <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+              <!-- <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a> -->
+              <a href="https://www.instagram.com/anau.v.b/" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="footer-social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-widget">
+            <h3 class="footer-widget-title">Արագ հղումներ</h3>
+            <ul class="footer-links">
+              <li><a href="./index.html" class="footer-link">Գլխավոր</a></li>
+              <li><a href="./about/about.html" class="footer-link">Մեր մասին</a></li>
+              <li><a href="./education/education.html" class="footer-link">Կրթություն</a></li>
+              <li><a href="./applicant/applicant.html" class="footer-link">Դիմորդ</a></li>
+              <li><a href="./haah/haah.html" class="footer-link">ՀԱԱՀ</a></li>
+              <li><a href="./cariere/cariere.html" class="footer-link">Կարիերայի կենտրոն</a></li>
+              <li><a href="./student/index.html" class="footer-link"> ՈՒս․ խորհուրդ</a></li>
+              <li><a href="./contact/contact.html" class="footer-link">Կապ մեզ հետ</a></li>
+            </ul>
+          </div>
+          <div class="footer-widget">
+            <h3 class="footer-widget-title">Ֆակուլտետներ</h3>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">Ագրոնոմիական ֆակուլտետ</a></li>
+              <li><a href="#" class="footer-link">Անասնաբուժական ֆակուլտետ</a></li>
+              <li><a href="#" class="footer-link">Պարենամթերքի տեխնոլոգիաների ֆակուլտետ</a></li>
+              <li><a href="#" class="footer-link">Ագրոբիզնեսի և տնտեսագիտության ֆակուլտետ</a></li>
+              <!-- <li><a href="#" class="footer-link">Հիդրոմելիորացիայի ֆակուլտետ</a></li>
+              <li><a href="#" class="footer-link">Գյուղատնտեսական մեքենայացման ֆակուլտետ</a></li> -->
+            </ul>
+          </div>
+          <div class="footer-widget">
+            <h3 class="footer-widget-title">Կապ մեզ հետ</h3>
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Ուսանողական 9, Վանաձոր, 0009, Հայաստան</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>+374 322 2 51 76</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>agr-vm2020@mail.ru</span>
+              </div>
+            </div>
+            <div class="footer-newsletter">
+              <h4 class="newsletter-title">Բաժանորդագրվել</h4>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Ձեր էլ. փոստը" required>
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <div class="footer-copyright">
+            <p>&copy; 2025 ՀԱԱՀ Վանաձորի մասնաճյուղ: Բոլոր իրավունքները պաշտպանված են:</p>
+          </div>
+          <div class="footer-bottom-links">
+            <a href="#">Գաղտնիության քաղաքականություն</a>
+            <a href="#">Օգտագործման պայմաններ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+ 
+  <!-- Scripts -->
+  <script src="./first/mine.js"></script>
+  <script src="search.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const dots = document.querySelectorAll('.hero-dot');
+  const prevBtn = document.querySelector('.hero-prev');
+  const nextBtn = document.querySelector('.hero-next');
+  const scrollDown = document.querySelector('.scroll-down');
+  const heroImage = document.querySelector('.hero-image');
+
+  let activeIndex = 0;
+
+  // List of your background images (update URLs as needed)
+  const images = [
+    'url("img/beckgraundi nkar.JPG")',
+    'url("img/bggg.jpg")',
+    'url("img/etnankar.jpg")'
+  ];
+
+  function updateHero(index) {
+    updateDots(index);
+    updateBackground(index);
+  }
+
+  function updateDots(index) {
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+  }
+
+  function updateBackground(index) {
+    heroImage.style.backgroundImage = images[index];
+  }
+
+  prevBtn.addEventListener('click', () => {
+    activeIndex = (activeIndex - 1 + dots.length) % dots.length;
+    updateHero(activeIndex);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    activeIndex = (activeIndex + 1) % dots.length;
+    updateHero(activeIndex);
+  });
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      activeIndex = index;
+      updateHero(activeIndex);
+    });
+  });
+
+  scrollDown.addEventListener('click', () => {
+    const nextSection = document.getElementById('next-section');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+  updateHero(activeIndex);
+});
+</script>
+
+
+
+</body>
+</html>
+
